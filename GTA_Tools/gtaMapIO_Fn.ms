@@ -574,7 +574,6 @@ fn readjump f = (
 )
 
 fn binaryIplRead iplname dffpath VerIdx textype mattype = (
-	pbProgressRename "IMPORT MAP FROM BIN IPL..."
 	format "\n -> IMPORT MAP FROM BIN IPL...\n\n"
 	ff = fopen iplname  "rb"
 	ReadLong ff

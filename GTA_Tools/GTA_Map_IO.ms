@@ -315,6 +315,8 @@ rollout IORoll "IO Control" (
 						
 						msgText += "\n\nReaded sections:\n" + tmptext
 						progressEnd()
+						progressEnd()
+						progressEnd()
 						messagebox msgText title:"MAP IO import info:"
 					)
 				)
