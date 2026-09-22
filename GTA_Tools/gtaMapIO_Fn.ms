@@ -1084,7 +1084,6 @@ fn ReadIPL iplname dffpath VerIdx textype mattype = (
 		if (isBinIPL iplname == true ) then (
 			binaryIplRead iplname dffpath VerIdx textype mattype
 		) else (	
-			pbProgressRename "IMPORT MAP FROM IPL..."
 			format "\n -> IMPORT MAP FROM IPL...\n"
 			f = openFile iplname	
 			fpos = getINSToffsetInIpl iplname
