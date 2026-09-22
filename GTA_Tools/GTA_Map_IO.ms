@@ -238,8 +238,8 @@ rollout IORoll "IO Control" (
 						popPrompt()
 						pushPrompt ("MAPIO: Map reading...")
 						format "\n -> MAPIO: Map reading...\n"
-						progressStart "MAPIO: Map reading..."
-						progressUpdate 1
+						-- progressStart "MAPIO: Map reading..."
+						-- progressUpdate 1
 						disableSceneRedraw()
 						enableUndo false
 						
@@ -296,7 +296,6 @@ rollout IORoll "IO Control" (
 						---------------
 						max tool zoomextents
 						gc()
-						progressEnd()
 						resumeediting()
 						enableSceneRedraw()
 						redrawViews()
@@ -314,9 +313,6 @@ rollout IORoll "IO Control" (
 						if st_cull > 0 then tmptext += "CULL"
 						
 						msgText += "\n\nReaded sections:\n" + tmptext
-						progressEnd()
-						progressEnd()
-						progressEnd()
 						messagebox msgText title:"MAP IO import info:"
 					)
 				)

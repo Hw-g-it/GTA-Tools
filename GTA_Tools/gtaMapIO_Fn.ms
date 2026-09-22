@@ -585,7 +585,6 @@ fn binaryIplRead iplname dffpath VerIdx textype mattype = (
 	ReadLong ff
 	fseek ff INSToffset #seek_set
 	for i=1 to INSTnum do (
-		pbProgressUpdate()
 		posx = ReadFloat ff
 		posy = ReadFloat ff
 		posz = ReadFloat ff
